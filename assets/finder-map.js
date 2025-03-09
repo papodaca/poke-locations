@@ -10,7 +10,7 @@
     }).addTo(map);
 
     for (let ii = 0; ii <= 21; ii++) {
-      window.fetch(`/assets/places_${ii}.json`).then(async function (res) {
+      window.fetch(`./assets/places_${ii}.json`).then(async function (res) {
         let places = await res.json();
 
         for (let place of places) {
